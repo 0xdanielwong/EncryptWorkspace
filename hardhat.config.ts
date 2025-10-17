@@ -8,14 +8,17 @@ import "hardhat-gas-reporter";
 import type { HardhatUserConfig } from "hardhat/config";
 import { vars } from "hardhat/config";
 import "solidity-coverage";
+import * as dotenv from "dotenv";
 
 import "./tasks/accounts";
-import "./tasks/FHECounter";
+import "./tasks/companyWorkspace";
+
+dotenv.config();
 
 // Run 'npx hardhat vars setup' to see the list of variables that need to be set
 
-const MNEMONIC: string = vars.get("MNEMONIC", "test test test test test test test test test test test junk");
-const INFURA_API_KEY: string = vars.get("INFURA_API_KEY", "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
+const MNEMONIC: string = process.env.MNEMONIC ?? vars.get("MNEMONIC", "test test test test test test test test test test test junk");
+const INFURA_API_KEY: string = process.env.INFURA_API_KEY ?? vars.get("INFURA_API_KEY", "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
 
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
@@ -24,7 +27,7 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      sepolia: vars.get("ETHERSCAN_API_KEY", ""),
+      sepolia: process.env.ETHERSCAN_API_KEY ?? vars.get("ETHERSCAN_API_KEY", ""),
     },
   },
   gasReporter: {
@@ -62,6 +65,7 @@ const config: HardhatUserConfig = {
     artifacts: "./artifacts",
     cache: "./cache",
     sources: "./contracts",
+    deployments: "./deployments",
     tests: "./test",
   },
   solidity: {
