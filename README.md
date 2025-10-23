@@ -1,4 +1,4 @@
-# ZamaWork - Encrypted Company Workspace
+# Encrypted Company Workspace
 
 **A blockchain-based encrypted collaboration platform powered by Fully Homomorphic Encryption (FHE)**
 
