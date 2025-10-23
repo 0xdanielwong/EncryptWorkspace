@@ -8,7 +8,7 @@ import { COMPANY_WORKSPACE_ABI } from '../config/abi';
 import { COMPANY_WORKSPACE_ADDRESS } from '../config/contracts';
 import { useEthersSigner } from '../hooks/useEthersSigner';
 import { useZamaInstance } from '../hooks/useZamaInstance';
-import type { CompanyRecord, DocumentRecord } from '../types/company';
+import type { CompanyRecord, DocumentRecord } from '../type/company';
 import {
   decryptWithCompanyPassword,
   encryptWithCompanyPassword,
