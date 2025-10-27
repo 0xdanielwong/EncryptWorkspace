@@ -2,7 +2,7 @@
 
 **A blockchain-based encrypted collaboration platform powered by Fully Homomorphic Encryption (FHE)**
 
-ZamaWork enables organizations to create secure, decentralized workspaces where confidential documents are protected by cryptographic encryption. Built on Ethereum with Zama's FHEVM protocol, it combines the transparency of blockchain with the privacy of advanced encryption technology.
+EncryptedWorkspace enables organizations to create secure, decentralized workspaces where confidential documents are protected by cryptographic encryption. Built on Ethereum with Zama's FHEVM protocol, it combines the transparency of blockchain with the privacy of advanced encryption technology.
 
 [![License](https://img.shields.io/badge/license-BSD--3--Clause--Clear-blue.svg)](LICENSE)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.27-363636.svg)](https://soliditylang.org/)
@@ -47,7 +47,7 @@ ZamaWork enables organizations to create secure, decentralized workspaces where 
 
 ## Overview
 
-ZamaWork is a decentralized application (dApp) that revolutionizes corporate document management by combining blockchain transparency with cutting-edge encryption. Organizations can create company workspaces on the Ethereum blockchain where:
+EncryptedWorkspace is a decentralized application (dApp) that revolutionizes corporate document management by combining blockchain transparency with cutting-edge encryption. Organizations can create company workspaces on the Ethereum blockchain where:
 
 - **Company passwords are encrypted using Fully Homomorphic Encryption (FHE)** and stored on-chain without revealing the actual password to anyone, including blockchain nodes
 - **Only authorized members can decrypt** the company password through Zama's privacy-preserving relayer system
