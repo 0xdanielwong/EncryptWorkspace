@@ -2,9 +2,9 @@
 pragma solidity ^0.8.24;
 
 import {FHE, eaddress, externalEaddress} from "@fhevm/solidity/lib/FHE.sol";
-import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
-contract CompanyWorkspace is SepoliaConfig {
+contract CompanyWorkspace is ZamaEthereumConfig {
     struct Company {
         string name;
         address owner;
